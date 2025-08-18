@@ -1,0 +1,146 @@
+/* Full screen centering */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #141414, #1c1c1c);
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+}
+
+/* Container (setup + game) */
+.container {
+    text-align: center;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.4), 0 0 30px rgba(0, 0, 255, 0.4);
+    width: 90%;
+    max-width: 450px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: yellow;
+    text-shadow: 0 0 10px #ff4444, 0 0 20px #ff0000;
+}
+
+/* Setup screen */
+#setup input {
+    padding: 10px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    border: 2px solid #444;
+    outline: none;
+    font-size: 1rem;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+#setup input:focus {
+    border-color: yellow;
+    box-shadow: 0 0 8px #ff4444;
+}
+
+#setup button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4444;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s;
+    box-shadow: 0 0 12px #ff4444, 0 0 20px #ff0000;
+}
+
+#setup button:hover {
+    background: #cc0000;
+}
+
+/* Game board */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 12px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.cell {
+    width: 120px;
+    height: 120px;
+    background: #111;
+    border-radius: 15px;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+    color: white;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.2) inset;
+}
+
+.cell:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #fff;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+/* X and O different colors */
+.cell.x {
+    color: #ff4444;
+    text-shadow: 0 0 12px #ff4444, 0 0 24px #ff0000;
+}
+
+.cell.o {
+    color: #4287f5;
+    text-shadow: 0 0 12px #4287f5, 0 0 24px #0055ff;
+}
+
+/* Status + Buttons */
+#status {
+    margin-top: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 6px #ff4444, 0 0 6px #4287f5;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    background: #4287f5;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 12px #4287f5, 0 0 20px #0055ff;
+}
+
+button:hover {
+    background: #0055ff;
+}
+
+/* Winner highlight */
+.winner {
+    background: #000 !important;
+    box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14;
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
