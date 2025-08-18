@@ -14,8 +14,7 @@ Play against your friends **(2 Player Mode)** or challenge the **unbeatable comp
 ---
 
 ## 🚀 Demo
-(If deployed, add your GitHub Pages / Netlify link here)
-
+https://ticctacctoeegamee.netlify.app/
 ---
 
 ## 🛠️ Technologies Used
@@ -47,12 +46,8 @@ Play against your friends **(2 Player Mode)** or challenge the **unbeatable comp
 
 ---
 
-📸 Screenshots
-(Add screenshots of your landing page & game board here once you host/run it.)
-
----
-
 Author
+
 Made by Riya Garg
 
 ---
