@@ -6,7 +6,7 @@ Play against your friends **(2 Player Mode)** or challenge the **unbeatable comp
 ✨ Features:
 - Neon-styled responsive design
 - **Two Player mode**
-- **Vs Computer mode** (AI using minimax algorithm)
+- **Vs Computer mode** with difficulty level of Easy, Medium and Hard
 - 🔴 Red `X` and 🔵 Blue `O` with glowing effects
 - Win detection & highlight
 - Restart option
