@@ -15,6 +15,7 @@
         <div id="setup">
             <input type="text" id="playerX" placeholder="Enter Player X name">
             <input type="text" id="playerO" placeholder="Enter Player O name">
+
             <!-- mode selection -->
             <div style="margin:15px 0;">
                 <label style="margin-right:10px;">
@@ -24,8 +25,22 @@
                     <input type="radio" name="mode" value="computer"> Vs Computer
                 </label>
             </div>
+
+            <!-- difficulty (only visible if computer is chosen) -->
+            <div id="difficultyBox" class="hidden">
+                <label>
+                    Difficulty:
+                    <select id="difficulty">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </label>
+            </div>
+
             <button id="startBtn">Start Game</button>
         </div>
+
         <!-- game page -->
         <div id="game" class="hidden">
             <div class="board" id="board">
@@ -43,8 +58,6 @@
             <button id="restartBtn">Restart</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
-
 </html>
