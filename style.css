@@ -10,7 +10,7 @@ body {
     color: #fff;
 }
 
-/* Container (setup + game) */
+/* Container */
 .container {
     text-align: center;
     background: rgba(30, 30, 30, 0.9);
@@ -97,7 +97,6 @@ h1 {
     cursor: not-allowed;
 }
 
-/* X and O different colors */
 .cell.x {
     color: #ff4444;
     text-shadow: 0 0 12px #ff4444, 0 0 24px #ff0000;
